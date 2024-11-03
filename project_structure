@@ -1,0 +1,11 @@
+go_tutorial
++-------cmd
+|            +--------cmd1
+|             |            +-----------main.go
+|            +--------cmd2
+|              |           +----------data_type.go
++-------firstprog.exe
++-------go.mod
+
+cmd folder contains the files tht have the package main.
+by practice, one folder can have one file containing the main func, thus there are two folders cmd1 and cmd2 each containing a file having the main func.
