@@ -22,6 +22,17 @@ func main() {
 	intslice = append(intslice, intslice2...)
 	fmt.Println(intslice)
 
+	// maps
+	intmap := map[string]int{"avi": 20, "adu": 11} //initializing
+	fmt.Println(intmap["avi"])                     //getting the value by referring the key
+
+	age, ok := intmap["joy"] // ok stores a bool val such tht we get to know if the key exists or not in the map
+	if ok {
+		fmt.Printf("the age is %v", age)
+	} else {
+		fmt.Printf("Invalid name or name does not exist")
+	}
+
 }
 
 // arrays are declared as ==> var <array_name> [size]<data-type> or <arr_name> := [size]<data-type>
@@ -38,3 +49,8 @@ func main() {
 // eg. {8, 9, 10, 7, *, *}, here len=4 and cap=6
 
 // another way of making slice is by using the make function make(<datatype>[], len, cap)
+
+//maps : map is a data-structure tht is basically like a dictionary tht stores {'key' : 'value'} pairs
+// we obtain the value by referring the key
+// maps are decalred as ==> var <var_name> map[string]int, here the key is of the type string and value is of the type int.
+// we can also use the make function make(map[string]int)
