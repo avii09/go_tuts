@@ -27,10 +27,27 @@ func main() {
 	fmt.Println(intmap["avi"])                     //getting the value by referring the key
 
 	age, ok := intmap["joy"] // ok stores a bool val such tht we get to know if the key exists or not in the map
-	if ok {
+	if ok {                  // ok is true if the key exists else false
 		fmt.Printf("the age is %v", age)
 	} else {
-		fmt.Printf("Invalid name or name does not exist")
+		fmt.Printf("Invalid name or name does not exist \n")
+	}
+
+	//loops
+	// to iterate thru a map
+	for name := range intmap {
+		fmt.Printf("Name : %v \n", name)
+	}
+
+	// iterating an array/slice
+	// here we are iterating thru the index value and its corres. value as well
+	for i, v := range intslice {
+		fmt.Printf("Index : %v, Value : %v \n", i, v)
+	}
+
+	// short hanf for loop or while loop
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
 	}
 
 }
@@ -52,5 +69,6 @@ func main() {
 
 //maps : map is a data-structure tht is basically like a dictionary tht stores {'key' : 'value'} pairs
 // we obtain the value by referring the key
-// maps are decalred as ==> var <var_name> map[string]int, here the key is of the type string and value is of the type int.
+// maps are decalred as ==> var <map_name> map[string]int, here the key is of the type string and value is of the type int.
 // we can also use the make function make(map[string]int)
+// delete function ==> delete(map_name, "key")
