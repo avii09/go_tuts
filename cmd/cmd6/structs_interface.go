@@ -5,10 +5,12 @@ import (
 	"math"
 )
 
+// this is an interface
 type Shape interface {
 	Area() float64
 }
 
+// defining structs
 type Circle struct {
 	radius float64
 }
@@ -18,6 +20,7 @@ type Rect struct {
 	height float64
 }
 
+// methods
 func (c Circle) Area() float64 {
 	return 2 * math.Pi * c.radius * c.radius
 }
@@ -26,12 +29,13 @@ func (r Rect) Area() float64 {
 	return r.width * r.height
 }
 
+// normal function
 func printArea(s Shape) {
 	fmt.Print("The area is:", s.Area(), "\n")
 }
 
 func main() {
-	var rec Rect = Rect{3, 5}
+	var rec Rect = Rect{3, 5} // creating an instance of the struct (basically like creating obj of class)
 	var cir Circle = Circle{4}
 	printArea(rec)
 	printArea(cir)
