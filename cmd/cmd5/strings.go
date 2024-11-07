@@ -31,7 +31,7 @@ func main() {
 
 }
 
-// go used utf-8 encoding to represent strings in your computer.
+// go uses utf-8 encoding to represent strings in your computer.
 // strings are represented as ASCII values which are basically binary nos representing bytes.
 // we use rune data type.
 // mainly because when we have a special case letter like a symbol which is out of the spectrum of vanilla ASCII values(0-127), it usually takes 2 or more bytes. so to index it properly such tht we have contigous index order.
