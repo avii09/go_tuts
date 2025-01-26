@@ -11,3 +11,5 @@ Focusing on understanding Golang syntax, structs, interfaces, and concurrency fe
 - [Structs and Interfaces](https://github.com/avii09/go_tuts/blob/main/cmd/cmd6/structs_interface.go)
 - [Pointers](https://github.com/avii09/go_tuts/blob/main/cmd/cmd7/pointers.go)
 - [Go routines](https://github.com/avii09/go_tuts/blob/main/cmd/cmd8/go_routines.go)
+
+  Click here to refer the [project structure](https://github.com/avii09/go_tuts/blob/main/project_structure)
